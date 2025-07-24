@@ -2,10 +2,10 @@ import React from "react";
 
 const PopularTours = () => {
   return (
-    <div className="w-full py-10">
+    <div className="w-full py-5">
       <div className="w-full max-w-6xl mx-auto">
-        <h2 className="text-5xl text-[#512731] leading-16 font-medium text-center mb-4">Explore Our Popular Tours</h2>
-        <p className="text-xl text-[#872731] leading-6 text-center">Discover Unforgettable Adventures with Our Top-Rated Tours</p>
+        <h2 className="text-4xl text-[#512731] leading-relaxed font-medium text-center mb-4">Explore Our Popular Tours</h2>
+        <p className="text-lg text-[#872731] leading-relaxed text-center">Discover Unforgettable Adventures with Our Top-Rated Tours</p>
         <div className="py-10">
           <div className="w-full  max-w-7xl mx-auto">
             <div className="grid grid-cols-6 grid-rows-4 gap-4">

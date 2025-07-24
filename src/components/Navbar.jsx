@@ -3,16 +3,16 @@ import { Link } from "react-router";
 
 const Navbar = () => {
   return (
-    <nav className="w-full ">
-      <div className="w-full flex items-center justify-between max-w-6xl mx-auto ">
+    <nav className="w-full shadow-xs">
+      <div className="w-full flex items-center justify-between max-w-6xl mx-auto  ">
         <Link to="/">
           {/* <img src={`./images/logo5.png`} alt="" className="w-36" /> */}
           <img src={`./images/brown-logo.svg`} alt="" className="w-32" />
         </Link>
         <div>
-          <ul className="flex items-center gap-12 text-md font-semibold">
+          <ul className="flex items-center gap-12 text-md font-bold">
             {" "}
-            <Link to="/packages" className="cursor-pointer text-[#512731]">
+            <Link to="packages" className="cursor-pointer text-[#512731]">
               PACKAGES & EXPERIENCES
             </Link>
             <Link to="/about-us" className="cursor-pointer text-[#512731]">

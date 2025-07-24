@@ -1,7 +1,7 @@
 import React from "react";
 
-const Packages = () => {
+const PackagesPage = () => {
   return <div>Packages</div>;
 };
 
-export default Packages;
+export default PackagesPage;
