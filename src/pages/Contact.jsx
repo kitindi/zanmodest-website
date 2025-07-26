@@ -5,28 +5,28 @@ import { Link } from "react-router";
 const Contact = () => {
   return (
     <div className="w-full ">
-      <div className="w-full max-w-4xl mx-auto py-5">
+      <div className="w-full max-w-5xl mx-auto py-5">
         <div className="w-full flex items-center justify-center gap-3">
           <Link to="/" className="text-md font-medium text-gray-400">
             Khami & Sons Tours and Safari
           </Link>{" "}
           <p className="text-md font-medium text-[#512731]">Our Contacts</p>
         </div>
-        <div className="w-full text-center">
-          <p className="text-4xl font-bold text-[#512731] mt-10">Zanmodest Travel Contacts</p>
-          <p className="max-w-4xl mx-auto text-[17px] leading-relaxed mt-5 text-[#512731]">
+        <div className="w-full t">
+          <p className="text-4xl font-bold text-[#512731] mt-10 text-center">Zanmodest Travel Contacts</p>
+          <p className="max-w-4xl mx-auto text-[17px] leading-relaxed mt-5 text-[#512731] text-lef">
             Based in the heart of Kianga, Zanzibar, Zanmodest, a modest-friendly tourism brand by Khami & Sons, is your trusted partner for unforgettable
             cultural tours and eco-conscious safaris. Our dedicated team, led by local experts with over a decade of experience, crafts personalized journeys
             that blend Swahili heritage with Islamic values.
           </p>
-          <p className="max-w-4xl mx-auto text-[17px] leading-relaxed mt-1 text-[#512731]">
+          <p className="max-w-4xl mx-auto text-[17px] leading-relaxed mt-1 text-[#512731] text-lef">
             Travel with Zanmodest and enjoy transparent pricing, authentic experiences guided by Zanzibar’s finest, and a commitment to sustainable tourism.
             Connect with us to plan your dream adventure today!
           </p>
         </div>
         <div className="w-full grid grid-cols-5 gap-5 mt-12 py-5 ">
           <div className="col-span-2">
-            <h3 className="text-3xl font-bold text-[#512731]">Reach Out to Us</h3>
+            <h3 className="text-3xl font-bold text-[#512731] text-left">Reach Out to Us</h3>
             <p className="text-[17px] leading-relaxed pt-8 text-[#512731]">
               Got a question, idea, or want to plan your Zanzibar adventure? We’re excited to connect with you! Fill out the form below, call us, or reach out
               via WhatsApp to start your modest-friendly journey

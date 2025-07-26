@@ -3,11 +3,11 @@ import React from "react";
 const Footer = () => {
   return (
     <div className="w-full flex items-start flex-col bg-[#d2bbb8] py-10 ">
-      <div className="w-full flex items-center justify-between max-w-7xl mx-auto ">
+      <div className="w-full flex items-center justify-between max-w-6xl mx-auto ">
         <div className="grid grid-cols-5">
           <div className="col-span-2 pr-32">
             <img src={`./images/brown-logo.svg`} alt="" className="w-38 mb-3" />
-            <p className="text-md leading-relaxed text-[#512731]">
+            <p className="text-sm leading-relaxed text-[#512731]">
               Zanmodest, a halal-friendly tourism brand by Khami & Sons in Zanzibar, offers personalized tours blending Swahili culture, stunning beaches, and
               eco-conscious adventures, connecting you to East Africa’s heart.
             </p>
@@ -94,7 +94,7 @@ const Footer = () => {
             </div>
             <div className="pt-14 px-2 text-[#522731]">
               <h3 className="font-medium mb-2">POPULAR DESTINATIONS</h3>
-              <ul className="space-y-1.5">
+              <ul className="space-y-1.5 text-sm">
                 <li>Paje Beach</li>
                 <li>Jambiani Beach</li>
                 <li>Nungwi</li>
@@ -125,7 +125,7 @@ const Footer = () => {
             </div>
             <div className="pt-14 px-2 text-[#522731]">
               <h3 className="font-medium mb-2">QUICKLINKS</h3>
-              <ul className="space-y-1.5">
+              <ul className="space-y-1.5 text-sm">
                 <li>Home</li>
                 <li>About us</li>
                 <li>Travel Guide</li>
@@ -156,7 +156,7 @@ const Footer = () => {
             </div>
             <div className="pt-14 px-2 text-[#522731]">
               <h3 className="font-medium mb-2">LEGAL</h3>
-              <ul className="space-y-1.5">
+              <ul className="space-y-1.5 text-sm">
                 <li>Terms of service</li>
                 <li>Booking terms</li>
                 <li>Privacy policy</li>
