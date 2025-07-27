@@ -4,8 +4,8 @@ const Packages = () => {
   return (
     <div className="w-full">
       <div className="w-full max-w-6xl mx-auto py-12">
-        <h2 className="text-4xl text-[#512731] leading-relaxed font-medium text-center mb-4">Curated Travel Packages Just for You</h2>
-        <p className="text-lg text-[#872731]  text-center max-w-3xl mx-auto mb-4 leading-relaxed">
+        <h2 className="text-3xl text-[#512731] leading-relaxed font-semibold text-center mb-4">Curated Travel Packages Just for You</h2>
+        <p className="text-[16px] text-[#872731]  text-center max-w-3xl mx-auto mb-4 leading-relaxed">
           Discover Zanzibar's breathtaking scenery and vibrant cultures. Every location provides distinct adventures and experiences, ensuring lasting memories.
           Immerse yourself in Zanzibar's enchantment
         </p>
