@@ -53,7 +53,7 @@ const Packages = () => {
             <div className="col-start-2 col-end-3 row-start-3 row-end-5">
               <div className="h-56">
                 {" "}
-                <img src="/images/stone-town.jpg" alt="" className="w-full object-cover min-h-0 h-full" />
+                <img src="/images/stone-6.jpg" alt="" className="w-full object-cover min-h-0 h-full" />
               </div>
               <div className="py-2">
                 <p className="text-md font-medium text-[#872731]">Full Day - Stone town, Jozani forest, Spaice farm</p>
