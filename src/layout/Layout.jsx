@@ -6,7 +6,7 @@ import Divider from "../components/Divider";
 
 const Layout = () => {
   return (
-    <div>
+    <div className="w-full bg-[#f6f5ef]">
       <Navbar />
       <main>
         <Outlet />

@@ -4,7 +4,7 @@ import Divider from "./Divider";
 
 const Features = () => {
   return (
-    <div className="w-full ">
+    <div className="w-full px-4 md:px-0 ">
       <Divider />
       <div className="w-full max-w-6xl mx-auto">
         <div className="grid grid-cols-2 py-16 gap-10">

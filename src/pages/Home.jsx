@@ -9,7 +9,7 @@ import Divider from "../components/Divider";
 
 const Home = () => {
   return (
-    <div className=" w-full bg-[#f9f6f2]">
+    <div className=" w-full ">
       <Hero />
       <Features />
       <PopularTours />

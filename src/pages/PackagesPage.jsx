@@ -34,10 +34,10 @@ const PackagesPage = () => {
   };
 
   return (
-    <div className="w-full">
+    <div className="px-4 md:px-0 w-full">
       <div className="w-full max-w-6xl mx-auto mt-20">
-        <div className="grid grid-cols-12">
-          <div className="col-span-7 pr-4 ">
+        <div className="grid grid-cols-6 md:grid-cols-12">
+          <div className="col-span-6 pr-4 ">
             <div className="w-full flex justify-between items-center mb-8">
               <h3 className="text-2xl font-semibold text-[#512731]">Zanzibar Excursions</h3>
             </div>
@@ -59,8 +59,8 @@ const PackagesPage = () => {
               blend of adventure, culture, and relaxation, creating unforgettable memories of this tropical paradise.
             </p>
           </div>
-          <div className="col-span-5">
-            <img src="" alt="" />
+          <div className="col-span-6">
+            <img src="images/Zanzibar_map_svg.svg" alt="zanzibar map_svg" className="w-full min-h-0 h-full object-cover" />
           </div>
         </div>
         <div className="mt-20">
