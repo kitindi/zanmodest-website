@@ -1,4 +1,4 @@
-import React from "react";
+import { Link } from "react-router";
 
 const Footer = () => {
   return (
@@ -6,10 +6,15 @@ const Footer = () => {
       <div className="w-full flex items-center justify-between max-w-6xl mx-auto ">
         <div className="flex flex-col md:grid md:grid-cols-5">
           <div className="w-full md:col-span-2 md:pr-32">
-            <img src={`./images/brown-logo.svg`} alt="" className="w-38 mb-3 hidden md:block " />
-            <span>
-              <img src={`./images/mobile-logo.png`} alt="" className="w-32 md:hidden" />
-            </span>
+            <Link to="/">
+              <img src={`./images/brown-logo.svg`} alt="" className="w-38 mb-3 hidden md:block " />
+            </Link>
+            <Link to="/">
+              <span>
+                <img src={`./images/mobile-logo.png`} alt="" className="w-32 md:hidden" />
+              </span>
+            </Link>
+
             <p className="w-full text-sm leading-relaxed text-[#512731]">
               Zanmodest, a halal-friendly tourism brand by Khami & Sons in Zanzibar, offers personalized tours blending Swahili culture, stunning beaches, and
               eco-conscious adventures, connecting you to East Africa’s heart.

@@ -5,14 +5,14 @@ import { Link } from "react-router";
 const Contact = () => {
   return (
     <div className="w-full ">
-      <div className="w-full max-w-5xl mx-auto py-5">
+      <div className="px-4 md:px-0 w-full max-w-5xl mx-auto py-5">
         <div className="w-full flex items-center justify-center gap-3">
           <Link to="/" className="text-md font-medium text-gray-400">
             Khami & Sons Tours and Safari
           </Link>{" "}
           <p className="text-md font-medium text-[#512731]">Our Contacts</p>
         </div>
-        <div className="w-full t">
+        <div className="w-full">
           <p className="text-4xl font-bold text-[#512731] my-10 text-center">Zanmodest Travel Contacts</p>
           <p className=" text-[16px] leading-relaxed mt-5 text-[#512731] text-lef">
             Based in the heart of Kianga, Zanzibar, Zanmodest, a modest-friendly tourism brand by Khami & Sons, is your trusted partner for unforgettable
@@ -24,7 +24,7 @@ const Contact = () => {
             Connect with us to plan your dream adventure today!
           </p>
         </div>
-        <div className="w-full grid grid-cols-5 gap-5 mt-12 py-5 ">
+        <div className="w-full flex flex-col gap-8 md:grid flex flex-col gap-8 md:grid-cols-5 flex flex-col gap-8 md:gap-5 mt-12 py-5 ">
           <div className="col-span-2">
             <h3 className="text-3xl font-bold text-[#512731] text-left">Reach Out to Us</h3>
             <p className="text-[16px] leading-relaxed pt-8 text-[#512731]">
@@ -94,7 +94,7 @@ const Contact = () => {
               </li>
             </ul>
           </div>
-          <div className="col-span-3 pl-16">
+          <div className="col-span-3 md:pl-16">
             {/* inquire form */}
             <form action="" className="w-full">
               <div className="w-full grid grid-cols-2 gap-4">
@@ -141,13 +141,9 @@ const Contact = () => {
                   ></textarea>
                 </div>
               </div>
-              <div className="w-full grid grid-cols-2 gap-4 mt-2">
-                <div className="col-span-2 w-full px-10 flex items-center gap-4">
-                  <input type="checkbox" name="" id="" /> <span className="text-[#512731]">Get travel tips and tours offers from us?</span>
-                </div>
-              </div>
+
               <div className="w-full flex items-center justify-center mt-2">
-                <button className="block text-lg font-semibold px-20 py-2 rounded-md bg-amber-950 text-white border-none cursor-pointer">SEND</button>
+                <button className="w-full block text-lg font-semibold px-20 py-2 rounded-md bg-amber-950 text-white border-none cursor-pointer">SEND</button>
               </div>
             </form>
           </div>
