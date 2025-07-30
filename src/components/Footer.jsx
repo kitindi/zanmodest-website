@@ -8,7 +8,7 @@ const Footer = () => {
           <div className="w-full md:col-span-2 md:pr-32">
             <img src={`./images/brown-logo.svg`} alt="" className="w-38 mb-3 hidden md:block " />
             <span>
-              <img src={`./images/mobile-logo.png`} alt="" className="w-36 md:hidden" />
+              <img src={`./images/mobile-logo.png`} alt="" className="w-32 md:hidden" />
             </span>
             <p className="w-full text-sm leading-relaxed text-[#512731]">
               Zanmodest, a halal-friendly tourism brand by Khami & Sons in Zanzibar, offers personalized tours blending Swahili culture, stunning beaches, and
