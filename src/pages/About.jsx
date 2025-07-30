@@ -43,7 +43,7 @@ const About = () => {
         <p className="text-[16px] leading-relaxed mt-5 text-[#512731] text-lef">
           We have meticulously crafted every aspect of our services to ensure your journey is seamless, respectful, and enriching
         </p>
-        <ul className="text-[16px] leading-relaxed mt-5 text-[#512731] text-lef flex flex-col gap-3 list-disc pl-10">
+        <ul className="text-[16px] leading-relaxed mt-5 text-[#512731] text-lef flex flex-col gap-3 list-disc md:pl-10">
           <li className="flex flex-col md:flex-row gap-3 md:gap-4 items-center">
             <span>
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#512731" viewBox="0 0 256 256">
@@ -94,7 +94,7 @@ const About = () => {
           </p>
           <Link
             to="/tour-packages"
-            className=" cursor-pointer bg-[#522731] text-white font-medium px-4 py-2 mt-2 flex justify-center items-center gap-3 w-fit mx-auto"
+            className=" cursor-pointer bg-[#522731] text-white font-medium px-4 py-2.5 mt-8 flex justify-center items-center gap-3 w-fit mx-auto"
           >
             Explore Our Modest Tour Packages
           </Link>
