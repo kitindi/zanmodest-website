@@ -11,6 +11,7 @@ const Home = () => {
   return (
     <div className=" w-full ">
       <Hero />
+      <Divider />
       <Features />
       <PopularTours />
       <Packages />

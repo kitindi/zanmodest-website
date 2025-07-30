@@ -3,7 +3,7 @@ import { Link } from "react-router";
 
 const Invite = () => {
   return (
-    <div className="w-full h-[80vh] flex items-center bg-[#d2bbb8]">
+    <div className="w-full h-[60vh] flex items-center bg-[#d2bbb8]">
       <div className="w-full max-w-6xl mx-auto">
         <h3 className="text-4xl text-center mb-8 font-semibold text-[#512731]">Let us help you plan your journey.</h3>
         <p className="text-lg italic text-center text-[#512731] leading-relaxed">
@@ -11,7 +11,7 @@ const Invite = () => {
           exploring the historic Stone Town, snorkeling in crystal waters, or savoring local spices, Zanzibar offers unforgettable experiences for all. Plan
           your trip today to discover the magic of this iconic island paradise.
         </p>
-        <div className="flex justify-center items-center py-10">
+        <div className="flex justify-center items-center py-5">
           {" "}
           <Link to="contact-us" className="bg-[#522731] cursor-pointer text-white font-bold px-12 py-3 rounded-sm">
             ENQUIRE NOW

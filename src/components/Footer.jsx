@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="w-full flex items-start flex-col bg-[#d2bbb8] py-10 ">
+    <div className="px-4 md:px-0 w-full flex items-start flex-col bg-[#d2bbb8] py-10 ">
       <div className="w-full flex items-center justify-between max-w-6xl mx-auto ">
         <div className="grid grid-cols-5">
           <div className="col-span-2 pr-32">
@@ -65,7 +65,7 @@ const Footer = () => {
                   </svg>
                 </li>
               </ul>
-              <p className="text-xs mt-3 text-[#512731] pt-3">
+              <p className="text-[10px] mt-3 text-[#512731] pt-3">
                 &copy; Copyright {new Date().getFullYear()} Khami & Sons Tours and Safari (SMC-Private) Limited
               </p>
             </div>

@@ -13,7 +13,7 @@ const Contact = () => {
           <p className="text-md font-medium text-[#512731]">Our Contacts</p>
         </div>
         <div className="w-full t">
-          <p className="text-4xl font-bold text-[#512731] mt-10 text-center">Zanmodest Travel Contacts</p>
+          <p className="text-4xl font-bold text-[#512731] my-10 text-center">Zanmodest Travel Contacts</p>
           <p className=" text-[16px] leading-relaxed mt-5 text-[#512731] text-lef">
             Based in the heart of Kianga, Zanzibar, Zanmodest, a modest-friendly tourism brand by Khami & Sons, is your trusted partner for unforgettable
             cultural tours and eco-conscious safaris. Our dedicated team, led by local experts with over a decade of experience, crafts personalized journeys
