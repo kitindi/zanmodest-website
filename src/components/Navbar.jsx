@@ -15,7 +15,7 @@ const Navbar = () => {
             <Link to="/" className="cursor-pointer text-[#512731] uppercase">
               HOME
             </Link>
-            <Link to="packages" className="cursor-pointer text-[#512731] uppercase">
+            <Link to="/tour-packages" className="cursor-pointer text-[#512731] uppercase">
               Excursions & EXPERIENCES
             </Link>
             <Link to="/about-us" className="cursor-pointer text-[#512731]">
