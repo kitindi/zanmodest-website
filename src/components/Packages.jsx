@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router";
 
 const Packages = () => {
   return (
@@ -22,12 +23,11 @@ const Packages = () => {
               </div>
               <div className="py-2">
                 <p className="text-md font-medium text-[#872731]">Full Day - Stone town, Jozani forest, Spaice farm</p>
-                <div className="flex justify-between items-center py-2">
-                  <div className="text-[#872731] font-medium text-sm">
-                    Start from <span className="font-bold">$25</span> person
-                  </div>
+                <div className="flex items-center py-2">
                   <div>
-                    <button className="border-none bg-[#872731] text-white px-2.5 py-1.5">Book Now</button>
+                    <Link to="/tour-packages" className="  bg-[#872731] text-white px-2.5 py-1.5">
+                      Read More..
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -39,12 +39,11 @@ const Packages = () => {
               </div>
               <div className="py-2">
                 <p className="text-md font-medium text-[#872731]">Full Day - Stone town, Jozani forest, Spaice farm</p>
-                <div className="flex justify-between items-center py-2">
-                  <div className="text-[#872731] font-medium text-sm">
-                    Start from <span className="font-bold">$25</span> person
-                  </div>
+                <div className="flex  items-center py-2">
                   <div>
-                    <button className="border-none bg-[#872731] text-white px-2.5 py-1.5">Book Now</button>
+                    <Link to="/tour-packages" className="  bg-[#872731] text-white px-2.5 py-1.5">
+                      Read More..
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -57,12 +56,11 @@ const Packages = () => {
               </div>
               <div className="py-2">
                 <p className="text-md font-medium text-[#872731]">Full Day - Stone town, Jozani forest, Spaice farm</p>
-                <div className="flex justify-between items-center py-2">
-                  <div className="text-[#872731] font-medium text-sm">
-                    Start from <span className="font-bold">$25</span> person
-                  </div>
+                <div className="flex  items-center py-2">
                   <div>
-                    <button className="border-none bg-[#872731] text-white px-2.5 py-1.5">Book Now</button>
+                    <Link to="/tour-packages" className="  bg-[#872731] text-white px-2.5 py-1.5">
+                      Read More..
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -76,12 +74,11 @@ const Packages = () => {
 
               <div className="py-2">
                 <p className="text-md font-medium text-[#872731]">Full Day - Stone town, Jozani forest, Spaice farm</p>
-                <div className="flex justify-between items-center py-2">
-                  <div className="text-[#872731] font-medium text-sm">
-                    Start from <span className="font-bold">$25</span> person
-                  </div>
+                <div className="flex  items-center py-2">
                   <div>
-                    <button className="border-none bg-[#872731] text-white px-2.5 py-1.5">Book Now</button>
+                    <Link to="/tour-packages" className="  bg-[#872731] text-white px-2.5 py-1.5">
+                      Read More..
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -94,12 +91,11 @@ const Packages = () => {
               </div>{" "}
               <div className="py-2">
                 <p className="text-md font-medium text-[#872731]">Full Day - Stone town, Jozani forest, Spaice farm</p>
-                <div className="flex justify-between items-center py-2">
-                  <div className="text-[#872731] font-medium text-sm">
-                    Start from <span className="font-bold">$25</span> person
-                  </div>
+                <div className="flex  items-center py-2">
                   <div>
-                    <button className="border-none bg-[#872731] text-white px-2.5 py-1.5">Book Now</button>
+                    <Link to="/tour-packages" className="  bg-[#872731] text-white px-2.5 py-1.5">
+                      Read More..
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -112,12 +108,11 @@ const Packages = () => {
               </div>{" "}
               <div className="py-2">
                 <p className="text-md font-medium text-[#872731]">Full Day - Stone town, Jozani forest, Spaice farm</p>
-                <div className="flex justify-between items-center py-2">
-                  <div className="text-[#872731] font-medium text-sm">
-                    Start from <span className="font-bold">$25</span> person
-                  </div>
+                <div className="flex  items-center py-2">
                   <div>
-                    <button className="border-none bg-[#872731] text-white px-2.5 py-1.5">Book Now</button>
+                    <Link to="/tour-packages" className="  bg-[#872731] text-white px-2.5 py-1.5">
+                      Read More..
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -130,12 +125,11 @@ const Packages = () => {
               </div>
               <div className="py-2">
                 <p className="text-md font-medium text-[#872731]">Full Day - Stone town, Jozani forest, Spaice farm</p>
-                <div className="flex justify-between items-center py-2">
-                  <div className="text-[#872731] font-medium text-sm">
-                    Start from <span className="font-bold">$25</span> person
-                  </div>
+                <div className="flex  items-center py-2">
                   <div>
-                    <button className="border-none bg-[#872731] text-white px-2.5 py-1.5">Book Now</button>
+                    <Link to="/tour-packages" className="  bg-[#872731] text-white px-2.5 py-1.5">
+                      Read More..
+                    </Link>
                   </div>
                 </div>
               </div>

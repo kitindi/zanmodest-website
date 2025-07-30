@@ -1,4 +1,4 @@
-import React from "react";
+import { Link } from "react-router";
 
 const Hero = () => {
   return (
@@ -9,9 +9,12 @@ const Hero = () => {
             Explore Zanzibar’s beauty through halal-friendly, immersive adventures customized for you
           </h1>
           <div className="flex items-center gap-4 mt-8">
-            <button className="text-lg  bg-[#512731] hover:bg-[#783a49] text-white px-6 py-3 font-semibold transition duration-300 uppercase cursor-pointer">
+            <Link
+              to="/tour-packages"
+              className="text-lg  bg-[#512731] hover:bg-[#783a49] text-white px-6 py-3 font-semibold transition duration-300 uppercase cursor-pointer"
+            >
               explore our packages
-            </button>
+            </Link>
           </div>
         </div>
       </div>
