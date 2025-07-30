@@ -4,7 +4,7 @@ const MobileNavbar = () => {
   return (
     <nav className="w-full shadow-sm md:hidden  px-4 flex justify-between items-center">
       <span>
-        <img src={`./images/brown-logo.svg`} alt="" className="w-32 mb-3 " />
+        <img src={`./images/brown-logo.svg`} alt="" className="w-24 mb-3 " />
       </span>
       <span>
         <svg
