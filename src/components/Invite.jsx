@@ -3,8 +3,8 @@ import { Link } from "react-router";
 
 const Invite = () => {
   return (
-    <div className="w-full h-[60vh] flex items-center bg-[#d2bbb8]">
-      <div className="w-full max-w-6xl mx-auto">
+    <div className="w-full flex items-center bg-[#d2bbb8]">
+      <div className="px-4 md:px-0 w-full max-w-6xl mx-auto py-20 md:py-32">
         <h3 className="text-4xl text-center mb-8 font-semibold text-[#512731]">Let us help you plan your journey.</h3>
         <p className="text-lg italic text-center text-[#512731] leading-relaxed">
           A visit to Zanzibar promises a captivating adventure with its pristine beaches, vibrant coral reefs, and rich cultural heritage. Whether you're
