@@ -14,7 +14,7 @@ const Packages = () => {
           <div className="flex flex-col md:grid md:grid-cols-3 md:grid-rows-6 gap-4">
             {/* card - 1 */}
             <div className="hidden md:block col-start-1 col-end-2 row-start-1 row-end-5">
-              <img src="/images/zanz.jpg" alt="" className="w-full object-cover min-h-0 h-full" />
+              <img src="/images/stown.jpg" alt="" className="w-full object-cover min-h-0 h-full" />
             </div>
             {/* card - 2 */}
             <div className="col-start-2 col-end-3 row-start-1 row-end-3">

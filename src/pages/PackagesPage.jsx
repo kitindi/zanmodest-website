@@ -7,34 +7,6 @@ import DestinationGallery from "../components/DestinationGallery";
 const PackagesPage = () => {
   const [flipTripOne, setFlipTripOne] = useState(false);
 
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  // images for sliders
-
-  const first_route_images = [
-    "/images/stone-1.jpg",
-    "/images/stone-2.jpg",
-    "/images/stone-3.jpg",
-    "/images/stone-4.jpg",
-    "/images/prison-1.jpg",
-    "/images/stone-6.jpg",
-    "/images/stone-7.jpg",
-  ];
-
-  // Function to go to the previous slide
-  const prevSlide = () => {
-    const isFirstSlide = currentIndex === 0;
-    const newIndex = isFirstSlide ? first_route_images.length - 1 : currentIndex - 1;
-    setCurrentIndex(newIndex);
-  };
-
-  // Function to go to the next slide
-  const nextSlide = () => {
-    const isLastSlide = currentIndex === first_route_images.length - 1;
-    const newIndex = isLastSlide ? 0 : currentIndex + 1;
-    setCurrentIndex(newIndex);
-  };
-
   return (
     <div className="w-full">
       <div className="px-4 md:px-0 w-full">
