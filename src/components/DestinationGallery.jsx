@@ -2,7 +2,32 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 
-const images = ["/images/IMG-1001.jpg", "/images/IMG-1048.jpg", "/images/IMG-1071.jpg", "/images/IMG-1074.jpg", "/images/IMG-1078.jpg"];
+const images = [
+  "/images/gellery-001.jpeg",
+  "/images/gallery-001.jpg",
+  "/images/galler-002.jpg",
+  "/images/gellery-003.jpg",
+  "/images/gellery-004.jpeg",
+  "/images/gellery-005.jpg",
+  "/images/gellery-006.jpg",
+  "/images/gellery-007.png",
+  "/images/gellery-008.jpg",
+  "/images/gellery-009.jpg",
+  "/images/gellery-010.jpg",
+  "/images/gellery-011.jpg",
+  "/images/gellery-012.jpg",
+  "/images/gellery-013.jpg",
+  "/images/gellery-014.jpg",
+  "/images/gellery-015.jpg",
+  "/images/gallery-016.jpg",
+  "/images/gallery-017.jpg",
+  "/images/gallery-018.jpg",
+  "/images/gallery-019.jpeg",
+  "/images/gallery-020.jpg",
+  "/images/gallery-021.jpg",
+  "/images/gallery-022.jpg",
+  "/images/gallery-023.jpg",
+];
 
 export default function DestinationGallery() {
   const [currentIndex, setCurrentIndex] = useState(null);
@@ -14,15 +39,16 @@ export default function DestinationGallery() {
   const showNext = () => setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
 
   return (
-    <div className="p-4">
+    <div className="px-4 md:px-0 w-full max-w-6xl mx-auto py-20 md:py-32">
+      <h3 className="text-4xl text-center mb-8 font-semibold text-[#512731]">Our Travel Photo Gallery</h3>
       {/* Grid Gallery */}
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-6 gap-3">
         {images.map((src, index) => (
           <img
             key={index}
             src={src}
             alt={`Destination ${index + 1}`}
-            className="w-full h-48 object-cover rounded-2xl cursor-pointer shadow-md hover:opacity-80 transition"
+            className="w-full h-60 min-h-0 object-cover rounded-lg cursor-pointer shadow-sm hover:opacity-80 transition"
             onClick={() => openImage(index)}
           />
         ))}

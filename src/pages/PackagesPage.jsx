@@ -1,12 +1,10 @@
 import { useState } from "react";
 import { Link } from "react-router";
 import Divider from "../components/Divider";
-import Tour_details from "../../public/tour_details.pdf";
 import TourDetils from "../components/TourDetils";
 import DestinationGallery from "../components/DestinationGallery";
 
 const PackagesPage = () => {
-  const fileUrl = Tour_details;
   const [flipTripOne, setFlipTripOne] = useState(false);
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -69,7 +67,6 @@ const PackagesPage = () => {
             </div>
           </div>
           <div className="mt-20">
-            <h3 className="text-2xl font-semibold text-[#512731] mb-5">Excursions Details</h3>
             <div className="">
               {/* trip 1 */}
               <div className="my-3">
@@ -78,42 +75,46 @@ const PackagesPage = () => {
                   onClick={() => setFlipTripOne(!flipTripOne)}
                 >
                   <div className="flex items-center gap-8 ">
-                    <p className="bg-[#512731] text-white px-5 py-1.5 text-md md:text-lg">Full day</p>{" "}
-                    <p className="text-lg md:text-xl text-[#512731] font-bold">Spice farm - Prison Island- Stone Town</p>
+                    <p className="text-lg md:text-xl text-[#512731] font-bold">Excursion Prices in US$ - Valid from January 1, 2025, to December 31, 2026</p>
                   </div>
                   <div className="pr-10 flex items-end">
                     {!flipTripOne ? (
-                      <span>
+                      <span className="h-16 w-16 rounded-full flex flex-col items-center justify-center bg-[#512731] text-white text-xs">
+                        View
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          width="32"
-                          height="32"
+                          width="18"
+                          height="18"
                           viewBox="0 0 24 24"
                           fill="none"
                           stroke="currentColor"
                           stroke-width="2"
                           stroke-linecap="round"
                           stroke-linejoin="round"
-                          className="lucide lucide-chevron-down-icon lucide-chevron-down text-[#512731]"
+                          class="lucide lucide-eye-icon lucide-eye"
                         >
-                          <path d="m6 9 6 6 6-6" />
+                          <path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0" />
+                          <circle cx="12" cy="12" r="3" />
                         </svg>
                       </span>
                     ) : (
-                      <span>
+                      <span className="h-16 w-16 rounded-full flex flex-col items-center justify-center bg-[#512731] text-white text-xs">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
+                          width="18"
+                          height="18"
                           viewBox="0 0 24 24"
                           fill="none"
                           stroke="currentColor"
                           stroke-width="2"
                           stroke-linecap="round"
                           stroke-linejoin="round"
-                          class="lucide lucide-chevron-up-icon lucide-chevron-up"
+                          class="lucide lucide-eye-off-icon lucide-eye-off"
                         >
-                          <path d="m18 15-6-6-6 6" />
+                          <path d="M10.733 5.076a10.744 10.744 0 0 1 11.205 6.575 1 1 0 0 1 0 .696 10.747 10.747 0 0 1-1.444 2.49" />
+                          <path d="M14.084 14.158a3 3 0 0 1-4.242-4.242" />
+                          <path d="M17.479 17.499a10.75 10.75 0 0 1-15.417-5.151 1 1 0 0 1 0-.696 10.75 10.75 0 0 1 4.446-5.143" />
+                          <path d="m2 2 20 20" />
                         </svg>
                       </span>
                     )}

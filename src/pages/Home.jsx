@@ -6,6 +6,7 @@ import PopularTours from "../components/PopularTours";
 import Packages from "../components/Packages";
 import Invite from "../components/Invite";
 import Divider from "../components/Divider";
+import DestinationGallery from "../components/DestinationGallery";
 
 const Home = () => {
   return (
@@ -15,8 +16,10 @@ const Home = () => {
       <Features />
       <PopularTours />
       <Packages />
-      <Divider />
+
       <Invite />
+      <DestinationGallery />
+      <Divider />
     </div>
   );
 };
