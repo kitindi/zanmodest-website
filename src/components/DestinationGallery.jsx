@@ -27,6 +27,12 @@ const images = [
   "/images/gallery-021.jpg",
   "/images/gallery-022.jpg",
   "/images/gallery-023.jpg",
+  "/images/gallery-025.png",
+  "/images/gallery-026.jpg",
+  "/images/gallery-026.webp",
+  "/images/gallery-027.jpg",
+  "/images/gallery-31.jpg",
+  "/images/gallery-030.webp",
 ];
 
 export default function DestinationGallery() {
