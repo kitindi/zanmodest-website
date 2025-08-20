@@ -138,9 +138,15 @@ const Footer = () => {
             <div className="md:pt-14 px-2 text-[#522731]">
               <h3 className="font-medium mb-2">POPULAR DESTINATIONS</h3>
               <ul className="space-y-1.5 text-sm">
-                <li>Paje Beach</li>
-                <li>Jambiani Beach</li>
-                <li>Nungwi</li>
+                <li className="hover:underline">
+                  <a href="/tour-packages">Paje Beach</a>
+                </li>
+                <li className="hover:underline">
+                  <a href="/tour-packages">Jambiani Beach</a>
+                </li>
+                <li className="hover:underline">
+                  <a href="/tour-packages">Nungwi</a>
+                </li>
               </ul>
             </div>
           </div>
@@ -169,10 +175,15 @@ const Footer = () => {
             <div className="md:pt-14 px-2 text-[#522731]">
               <h3 className="font-medium mb-2">QUICKLINKS</h3>
               <ul className="space-y-1.5 text-sm">
-                <li>Home</li>
-                <li>About us</li>
-                <li>Travel Guide</li>
-                <li>FAQ Zanzibar</li>
+                <li className="hover:underline">
+                  <a href="/">Home</a>
+                </li>
+                <li className="hover:underline">
+                  <a href="/about-us">About us</a>
+                </li>
+                <li className="hover:underline">
+                  <a href="/contact-us">Contact Us</a>
+                </li>
               </ul>
             </div>
           </div>

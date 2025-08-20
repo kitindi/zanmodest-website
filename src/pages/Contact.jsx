@@ -1,8 +1,34 @@
-import React from "react";
+import { useState } from "react";
 import Divider from "../components/Divider";
 import { Link } from "react-router";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({ firstname: "", lastname: "", email: "", phone: "", message: "" });
+  const [status, setStatus] = useState("");
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    console.log(formData);
+    try {
+      const response = await fetch("/send_email.php", {
+        // Path to your PHP script
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString(),
+      });
+      const result = await response.json();
+      if (result.status === "success") {
+        setStatus("Message sent successfully!");
+      }
+      // eslint-disable-next-line no-unused-vars
+    } catch (error) {
+      setStatus("Error sending message. Try again.");
+    }
+  };
   return (
     <div className="w-full ">
       <div className="px-4 md:px-0 w-full max-w-5xl mx-auto py-5">
@@ -96,19 +122,33 @@ const Contact = () => {
           </div>
           <div className="col-span-3 md:pl-16">
             {/* inquire form */}
-            <form action="" className="w-full">
+            <form className="w-full" onSubmit={handleSubmit} method="POST">
               <div className="w-full grid grid-cols-2 gap-4">
                 <div className="col-span-1 w-full">
                   <label htmlFor="" className="text-md font-semibold text-[#512731]">
                     Your first name*
                   </label>
-                  <input type="text" placeholder="First name" className="w-full border rounded-md mt-2 px-3 py-1.5 outline-none" />
+                  <input
+                    type="text"
+                    placeholder="First name"
+                    name="firstname"
+                    className="w-full border rounded-md mt-2 px-3 py-1.5 outline-none"
+                    required
+                    onChange={handleChange}
+                  />
                 </div>
                 <div className="col-span-1">
                   <label htmlFor="" className="text-md font-semibold text-[#512731]">
                     Your first name*
                   </label>
-                  <input type="text" placeholder="First name" className="w-full border rounded-md mt-2 px-3 py-1.5 outline-none" />
+                  <input
+                    type="text"
+                    placeholder="First name"
+                    name="lastname"
+                    className="w-full border rounded-md mt-2 px-3 py-1.5 outline-none"
+                    required
+                    onChange={handleChange}
+                  />
                 </div>
               </div>
               <div className="w-full grid grid-cols-2 gap-4 mt-2">
@@ -116,7 +156,14 @@ const Contact = () => {
                   <label htmlFor="" className="text-md font-semibold text-[#512731]">
                     Your E-Mail*
                   </label>
-                  <input type="text" placeholder="E-Mail" className="w-full border rounded-md mt-2 px-3 py-1.5 outline-none" />
+                  <input
+                    type="text"
+                    placeholder="E-Mail"
+                    name="email"
+                    className="w-full border rounded-md mt-2 px-3 py-1.5 outline-none"
+                    required
+                    onChange={handleChange}
+                  />
                 </div>
               </div>
               <div className="w-full grid grid-cols-2 gap-4 mt-2">
@@ -124,7 +171,14 @@ const Contact = () => {
                   <label htmlFor="" className="text-md font-semibold text-[#512731]">
                     Your phone
                   </label>
-                  <input type="text" placeholder="Phone (International format)" className="w-full border rounded-md mt-2 px-3 py-1.5 outline-none" />
+                  <input
+                    type="text"
+                    name="phone"
+                    placeholder="Phone (International format)"
+                    className="w-full border rounded-md mt-2 px-3 py-1.5 outline-none"
+                    onChange={handleChange}
+                    required
+                  />
                 </div>
               </div>
               <div className="w-full grid grid-cols-2 gap-4 mt-2">
@@ -133,17 +187,20 @@ const Contact = () => {
                     How can we help you?*
                   </label>
                   <textarea
-                    name=""
+                    name="message"
                     id=""
-                    rows={4}
+                    onChange={handleChange}
+                    rows={5}
+                    required
                     className="w-full border border-gray-500 rounded-md outline-none px-3 py-2 mt-2"
                     placeholder="Please let us know if you have any question"
                   ></textarea>
                 </div>
               </div>
 
-              <div className="w-full flex items-center justify-center mt-2">
+              <div className="w-full flex flex-col items-center justify-center mt-2">
                 <button className="w-full block text-lg font-semibold px-20 py-2 rounded-md bg-amber-950 text-white border-none cursor-pointer">SEND</button>
+                {status && <p className="mt-3 text-sm text-red-500">{status}</p>}
               </div>
             </form>
           </div>
