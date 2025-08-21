@@ -51,7 +51,7 @@ export default function DestinationGallery() {
   const showNext = () => setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
 
   return (
-    <div className="px-4 md:px-0 w-full max-w-6xl mx-auto py-20 md:py-32">
+    <div className="w-full max-w-6xl mx-auto py-20 md:py-32">
       <h3 className="text-4xl text-center mb-8 font-semibold text-[#512731]">Our Travel Photo Gallery</h3>
       {/* Grid Gallery */}
       <div className="grid grid-cols-2 md:grid-cols-6 gap-3">
