@@ -139,13 +139,13 @@ const Footer = () => {
               <h3 className="font-medium mb-2">POPULAR DESTINATIONS</h3>
               <ul className="space-y-1.5 text-sm">
                 <li className="hover:underline">
-                  <a href="/tour-packages">Paje Beach</a>
+                  <Link to="/tour-packages">Paje Beach</Link>
                 </li>
                 <li className="hover:underline">
-                  <a href="/tour-packages">Jambiani Beach</a>
+                  <Link to="/tour-packages">Jambiani Beach</Link>
                 </li>
                 <li className="hover:underline">
-                  <a href="/tour-packages">Nungwi</a>
+                  <Link to="/tour-packages">Nungwi</Link>
                 </li>
               </ul>
             </div>
@@ -176,13 +176,13 @@ const Footer = () => {
               <h3 className="font-medium mb-2">QUICKLINKS</h3>
               <ul className="space-y-1.5 text-sm">
                 <li className="hover:underline">
-                  <a href="/">Home</a>
+                  <Link to="/">Home</Link>
                 </li>
                 <li className="hover:underline">
-                  <a href="about-us">About us</a>
+                  <Link to="/about-us">About us</Link>
                 </li>
                 <li className="hover:underline">
-                  <a href="contact-us">Contact Us</a>
+                  <Link to="/contact-us">Contact Us</Link>
                 </li>
               </ul>
             </div>
