@@ -90,7 +90,7 @@ const MobileNavbar = () => {
             <Link to="/contact-us" className="text-[#522731] cursor-pointer" onClick={toggleMenu}>
               CONTACTS
             </Link>
-            <Link to="contact-us" className="bg-[#522731] cursor-pointer text-white font-bold px-12 py-3 rounded-sm" onClick={toggleMenu}>
+            <Link to="/contact-us" className="bg-[#522731] cursor-pointer text-white font-bold px-12 py-3 rounded-sm" onClick={toggleMenu}>
               ENQUIRE NOW
             </Link>
           </ul>
