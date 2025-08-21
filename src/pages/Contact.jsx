@@ -5,6 +5,7 @@ import { Link } from "react-router";
 const Contact = () => {
   const [formData, setFormData] = useState({ firstname: "", lastname: "", email: "", phone: "", message: "" });
   const [status, setStatus] = useState("");
+  const [filStatus, setFailStatus] = useState("");
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -22,10 +23,11 @@ const Contact = () => {
       const result = await response.json();
       if (result.status === "success") {
         setStatus("Message sent successfully!");
+        setFormData({ firstname: "", lastname: "", email: "", phone: "", message: "" });
       }
       // eslint-disable-next-line no-unused-vars
     } catch (error) {
-      setStatus("Error sending message. Try again.");
+      setFailStatus("Error sending message. Try again.");
     }
   };
   return (
@@ -207,7 +209,8 @@ const Contact = () => {
 
               <div className="w-full flex flex-col items-center justify-center mt-2">
                 <button className="w-full block text-lg font-semibold px-20 py-2 rounded-md bg-amber-950 text-white border-none cursor-pointer">SEND</button>
-                {status && <p className="mt-3 text-sm text-red-500">{status}</p>}
+                {status && <p className="mt-3 text-sm text-green-500 font-semibold">{status}</p>}
+                {filStatus && <p className="mt-3 text-sm text-red-500 font-semibold">{filStatus}</p>}
               </div>
             </form>
           </div>
