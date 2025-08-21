@@ -221,9 +221,9 @@ const Footer = () => {
             &copy; Copyright {new Date().getFullYear()} Khami & Sons Tours and Safari (SMC-Private) Limited
           </p>
           <p className="text-[10px] text-[#512731] mt-2 font-bold">
-            <a href="https://vectarlabs.com" target="_blank">
+            <Link to="https://vectarlabs.com" target="_blank">
               Designed & Developed by vectarlabs
-            </a>
+            </Link>
           </p>
         </div>
       </div>

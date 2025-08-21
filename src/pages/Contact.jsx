@@ -148,11 +148,11 @@ const Contact = () => {
                 </div>
                 <div className="col-span-1">
                   <label htmlFor="" className="text-md font-semibold text-[#512731]">
-                    Your first name*
+                    Your last name*
                   </label>
                   <input
                     type="text"
-                    placeholder="First name"
+                    placeholder="Last name"
                     name="lastname"
                     className="w-full border rounded-md mt-2 px-3 py-2 outline-none"
                     required
@@ -183,7 +183,7 @@ const Contact = () => {
                   <input
                     type="text"
                     name="phone"
-                    placeholder="Phone (International format)"
+                    placeholder="Phone (International format) i.e (+255) 675111 444"
                     className="w-full border rounded-md mt-2 px-3 py-2 outline-none"
                     onChange={handleChange}
                     required
