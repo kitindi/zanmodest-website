@@ -220,6 +220,11 @@ const Footer = () => {
           <p className="md:hidden text-[10px] mt-3 text-[#512731] pt-3">
             &copy; Copyright {new Date().getFullYear()} Khami & Sons Tours and Safari (SMC-Private) Limited
           </p>
+          <p className="text-[10px] text-[#512731] mt-2 font-bold">
+            <a href="https://vectarlabs.com" target="_blank">
+              Designed & Developed by vectarlabs
+            </a>
+          </p>
         </div>
       </div>
     </div>

@@ -3,7 +3,12 @@ import { motion, AnimatePresence } from "framer-motion";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 
 const images = [
-  "/images/gallery-001.jpeg",
+  "/images/gallery-0000.jpg",
+  "/images/gallery-0001.webp",
+  "/images/gallery-0002.webp",
+  "/images/gallery-0003.webp",
+  "/images/gallery-0004.jpg",
+  "/images/gallery-0005.webp",
   "/images/gallery-001.jpg",
   "/images/galler-002.jpg",
   "/images/gallery-003.jpg",
@@ -12,6 +17,7 @@ const images = [
   "/images/gallery-006.jpg",
   "/images/gallery-007.png",
   "/images/gallery-008.jpg",
+  "/images/gallery-0006.jpg",
   "/images/gallery-009.jpg",
   "/images/gallery-010.jpg",
   "/images/gallery-011.jpg",
